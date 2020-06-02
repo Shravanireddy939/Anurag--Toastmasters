@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "anuragtoastmasters"
+    }
+  },
+  "defaultProject": "anuragtoastmasters",
+  "cli": {
+    "analytics": "83948641-1c7f-424d-9e04-352a3e49843c"
+  }
 }

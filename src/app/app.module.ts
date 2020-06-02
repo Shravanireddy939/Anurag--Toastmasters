@@ -3,14 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EtiquetteComponent } from './etiquette/etiquette.component';
+import { HomeComponent } from './home/home.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { ExecutivecommitteeComponent } from './executivecommittee/executivecommittee.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EtiquetteComponent,
+    HomeComponent,
+    AchievementsComponent,
+    ExecutivecommitteeComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

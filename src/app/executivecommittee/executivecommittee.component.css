@@ -1,0 +1,15 @@
+.yellow{
+    background-color:rgb(243, 229, 101);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .brown{
+    background-color:brown;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .blue{
+    background-color:rgb(120, 120, 207);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
