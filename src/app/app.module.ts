@@ -10,6 +10,9 @@ import { ExecutivecommitteeComponent } from './executivecommittee/executivecommi
 import { ResourcesComponent } from './resources/resources.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { ContestsComponent } from './contests/contests.component';
+import { AwardsComponent } from './awards/awards.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import {FormsModule} from '@angular/forms';
     HomeComponent,
     AchievementsComponent,
     ExecutivecommitteeComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    ContestsComponent,
+    AwardsComponent
   ],
   imports: [
     BrowserModule,
