@@ -5,3 +5,17 @@
     height: 100%;
     width: 100%;
   }
+  .background1{
+    background-image:url("src\assets\images\meeting image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel-item{
+    height: 520px;
+} 
+.carousel-item img{
+    height: 10000px;
+}

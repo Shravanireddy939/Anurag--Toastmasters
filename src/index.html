@@ -21,4 +21,81 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+  $('a#testpop').on('click', function(e) {e.preventDefault(); return true;});
+  $(this).popover({
+            html:true
+        });
+  </script>
+
+<script>
+$("[data-toggle=popover]").on('shown.bs.popover', function () {
+   $('.carousel-inner').carousel();
+});</script>
+
+
+
+<script>
+  $("[data-toggle=popover]").each(function(i, obj) {
+  $(this).popover({
+    html: true,
+    content: function() {
+      var id = $(this).attr('id')
+      return $('#popover-content-' + id).html();
+    }
+  });
+
+});
+
+$("[data-toggle=popover]").on('shown.bs.popover', function() {
+  $('.carousel-inner').carousel();
+});
+</script>
+
+<script>
+  // Activate Carousel
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+  $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+  $("#myCarousel").carousel("prev");
+});
+
+$('.carousel-control.left').click(function() {
+  $('#myCarousel').carousel('prev');
+});
+
+$('.carousel-control.right').click(function() {
+  $('#myCarousel').carousel('next');
+});
+</script>
+
+<script>
+// Fixes the prev/next links of the sliders
+$('.carousel-control.left').click(function(e) {
+  e.stopPropagation();
+  $('.js-carousel').carousel('prev');
+  return false;
+});
+
+$('.carousel-control.right').click(function(e) {
+  e.stopPropagation();
+  $('.js-carousel').carousel('next');
+  return false;
+});
+
+</script>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
 </html>

@@ -50,3 +50,25 @@
   .jumbotron {
     margin-bottom: 0px;
  }
+ .popover {
+  white-space: pre-wrap; 
+  margin-left: 1em;
+    margin-right: 1em;   
+    margin-top: 0em;
+    background: tomato;
+}
+.popover.bottom .arrow:after {
+  border-bottom-color: tomato;
+}
+.popover-title{
+  background: #ffff99;
+}
+.popover-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  color: white;
+}
+
+.popover-danger.right .arrow:after {
+  border-right-color: #d9534f;
+}
